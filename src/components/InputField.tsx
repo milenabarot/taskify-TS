@@ -6,6 +6,7 @@ interface Props {
   setTodo: React.Dispatch<React.SetStateAction<string>>;
   handleAdd: (e: React.FormEvent) => void;
 }
+
 // can also write it like this:
 // const InputField: React.FC<Props> = ....
 
