@@ -15,6 +15,8 @@ const App: React.FC = () => {
       // todo is just todo as its the same name, shorthand for todo: todo
       setTodos([...todos, { id: Date.now(), todo, isDone: false }]);
     }
+
+    setTodo("");
   };
 
   console.log(todos);
