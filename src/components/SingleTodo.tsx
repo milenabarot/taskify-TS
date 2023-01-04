@@ -24,8 +24,12 @@ const SingleTodo = ({ index, todo, todos, setTodos }: Props) => {
     );
   };
 
+  console.log(todos);
+
   const handleDelete = (id: number) => {
     setTodos(todos.filter((todo) => todo.id !== id));
+    // if()
+    // localStorage.setItem("todoList")
   };
 
   const handleEdit = (e: React.FormEvent, id: number) => {
@@ -34,7 +38,7 @@ const SingleTodo = ({ index, todo, todos, setTodos }: Props) => {
     setTodos(
       todos.map((todo) => (todo.id === id ? { ...todo, todo: editTodo } : todo))
     );
-
+    console.log(todo);
     setEdit(false);
   };
 

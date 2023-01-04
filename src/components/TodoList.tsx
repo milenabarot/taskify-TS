@@ -16,6 +16,7 @@ const TodoList: React.FC<props> = ({
   completedTodos,
   setCompletedTodos,
 }) => {
+  console.log(completedTodos);
   return (
     <div className="container">
       <Droppable droppableId="TodosList">
